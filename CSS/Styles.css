@@ -1,0 +1,230 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* padding: 0 30px; */
+  width: 1124px;
+  /* margin: 24px 195px; */
+  margin: auto;
+  justify-content: space-between;
+}
+
+.flex-left {
+  width: 65%;
+  margin: 5px;
+
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.flex-right {
+  width: 30%;
+  margin: 5px;
+}
+.box-design {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Class for background color and padding for every section  */
+.section-design {
+  padding-top: 10px;
+  padding-left: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.title {
+  color: #191919;
+}
+
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  color: black;
+}
+body {
+  background-color: #f3f2ef;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+    Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica,
+    Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.companyinfo-block {
+  position: relative;
+  padding: 0px;
+}
+
+.cover-img img {
+  height: 150px;
+  width: 100%;
+}
+
+.company-logo img {
+  position: absolute;
+  height: 100px;
+  top: 22%;
+  left: 5%;
+}
+
+.company-details {
+  padding-top: 10px;
+  padding-left: 30px;
+  background-color: #ffffff;
+}
+
+.company-details h1 {
+  color: black;
+}
+
+.linkedin-employees a {
+  color: rgba(0, 0, 0, 0.6);
+}
+.company-details-buttons {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+.follow-button {
+  background-color: #0a66c2;
+  border: none;
+  color: white;
+  padding: 6px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.visit-website-btn {
+  background-color: #fff;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  padding: 6px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.more-btn {
+  background-color: #fff;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  padding: 6px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #fff;
+  display: flex;
+
+  align-items: center;
+  border-top: 0.5px solid #ccc;
+}
+
+/* changing the default nav bar color */
+.navbar a {
+  color: #e7e7e7;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: rgba(0, 0, 0, 0.6);
+  padding-right: 24px;
+  display: block;
+}
+
+.insights-section {
+  margin-top: 10px;
+}
+
+.company-growth {
+  display: flex;
+  flex-direction: row;
+}
+
+.employee-joined {
+  height: 50px;
+  border-radius: 35px;
+}
+.recent-hires {
+  margin-top: 10px;
+  width: 55%;
+}
+.headcount-growth {
+  margin-top: 10px;
+  width: 25%;
+  padding-top: 20px;
+}
+
+.adds-images {
+  height: 250px;
+  background-color: #fff;
+}
+.other-pages {
+  padding-left: 15px;
+}
+.company-page {
+  border-bottom: 1px solid #ccc;
+}
+
+.other-company-details {
+  display: flex;
+  flex-direction: row;
+}
+.companypage-details {
+  margin-left: 10px;
+}
+
+.companypage-details h3,
+p {
+  margin: 0px;
+}
+
+.other-company-image {
+  margin-top: 10px;
+  height: 50px;
+}
+.follow-other-companybtn {
+  background-color: #fff;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.similar-pages {
+  padding: auto;
+}
