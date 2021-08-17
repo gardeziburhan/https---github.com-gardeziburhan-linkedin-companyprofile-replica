@@ -41,6 +41,7 @@
 
 a {
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
 }
 h1,
 h2,
@@ -56,6 +57,8 @@ body {
     Arial, sans-serif;
   font-weight: 400;
   line-height: 1.4;
+  margin: 0px;
+  margin-bottom: 20px;
 }
 
 .companyinfo-block {
@@ -135,7 +138,7 @@ body {
   cursor: pointer;
 }
 
-.navbar {
+.navbar-homepage {
   background-color: #fff;
   display: flex;
 
@@ -144,29 +147,48 @@ body {
 }
 
 /* changing the default nav bar color */
-.navbar a {
+.navbar-homepage a {
   color: #e7e7e7;
 }
 
-.navbar ul {
+.navbar-homepage ul {
   display: flex;
   list-style: none;
   align-items: center;
 }
 
-.navbar ul li a {
+.navbar-homepage ul li a {
   color: rgba(0, 0, 0, 0.6);
   padding-right: 24px;
   display: block;
 }
 
+/* about section - left flexbox */
+
+.about-section p {
+  padding-bottom: 10px;
+}
+.see-all-details {
+  border-top: 1px solid #ccc;
+  padding: 10px 250px;
+}
+/* left flexbox last section -- Insights on thought bot */
 .insights-section {
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .company-growth {
   display: flex;
   flex-direction: row;
+}
+.insights-section-upperpart {
+  border-bottom: 1px solid #ccc;
+}
+
+.headcount-flex {
+  display: flex;
+  flex-direction: row;
+  width: 55%;
 }
 
 .employee-joined {
@@ -175,18 +197,46 @@ body {
 }
 .recent-hires {
   margin-top: 10px;
-  width: 55%;
+  width: 45%;
 }
-.headcount-growth {
-  margin-top: 10px;
-  width: 25%;
-  padding-top: 20px;
+.recent-hires h4,
+p {
+  margin: 0px;
 }
 
+.insights-section-lowerpart {
+  display: flex;
+  flex-direction: row;
+}
+.insights-section-lowerpart-flex {
+  width: 50%;
+  padding: 12px 0px;
+}
+.insights-section-lowerpart-flex h4 {
+  margin: 0px;
+}
+.insights-section-lowerpart-flex button {
+  background-color: #f8c77e;
+  border: none;
+  color: grba(0, 0, 0, 0.9);
+  padding: 6px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Right flexbox */
+/* ------------------------------------------------------- */
+/* Right flexbox add section */
 .adds-images {
   height: 250px;
   background-color: #fff;
 }
+/* Other similar companies in right flexbox  */
 .other-pages {
   padding-left: 15px;
 }
@@ -228,3 +278,170 @@ p {
 .similar-pages {
   padding: auto;
 }
+
+/* Main navbar css */
+/*----------------------------------------------------------------*/
+.header-navbar {
+  width: 100vw;
+  background-color: #fff;
+}
+
+.main-navbar {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-around;
+
+  width: 1124px;
+  margin-bottom: 50px;
+  padding-top: 5px;
+}
+.navbar-leftflex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 25%;
+}
+
+.linkedin-logo {
+  margin-right: 10px;
+}
+
+.navbar-searchbox input {
+  height: 34px;
+  width: 280px;
+  background-color: #eef3f8;
+  border: none;
+  border-radius: 5px;
+}
+.right-flexbox {
+  width: 65%;
+}
+
+.rightflexbox-icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-left: 150px;
+  align-items: center;
+}
+
+.rightflexbox-icons ul li {
+  list-style: none;
+  height: 52px;
+  /* align-items: center; */
+}
+
+.rightflexbox-icons ul {
+  margin: 0px;
+}
+
+.navbar-icon-links {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.navbar-icon-links p {
+  font-size: 12px;
+}
+.navbar-work-border {
+  border-left: 1px solid #ccc;
+}
+
+.try-permium li {
+  width: 30px;
+}
+/* ----------------------------------------------- */
+/* Recent Job Opening Section */
+/* ----------------------------------------------- */
+.recent-jobs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.job-opening {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15px;
+}
+
+.job-image img {
+  height: 48px;
+  width: 48px;
+}
+.job-title-location h4 {
+  margin: 0px;
+}
+.all-jobs-opening {
+  margin: 10px 265px;
+}
+/* ----------------------------------------------- */
+/* Recently posted videos */
+/* ----------------------------------------------- */
+
+.posted-videos-flex {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.posted-videos-text p {
+  padding: 0 20px;
+}
+.see-all-videos {
+  padding: 5px 250px;
+}
+
+/* ----------------------------------------------- */
+/* setting up classes of font-size & color for different areas */
+/* ----------------------------------------------- */
+.body-font {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.t-24 {
+  font-size: 2.4rem;
+}
+.title-font {
+  font-size: 100%;
+}
+.title-16 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.text-14 {
+  font-size: 1.4rem;
+  line-height: 1.42857;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+.text-color {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.text-20 {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+.padding-class {
+  padding: 24px 24px 24px 24px;
+}
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+/* ----------------------------------------------- */
+/* Media queries  */
+/* ----------------------------------------------- */
+
+/* mobile screen :-320px */
