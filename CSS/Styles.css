@@ -2,9 +2,12 @@
   display: flex;
   flex-direction: row;
   /* padding: 0 30px; */
-  width: 1124px;
+  /* width: 1124px; */
   /* margin: 24px 195px; */
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
   justify-content: space-between;
 }
 
@@ -13,8 +16,6 @@
   margin: 5px;
 
   border-radius: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .flex-right {
@@ -28,11 +29,10 @@
 
 /* Class for background color and padding for every section  */
 .section-design {
-  padding-top: 10px;
-  padding-left: 30px;
   background-color: #ffffff;
   border-radius: 10px;
   border: 1px solid white;
+  margin-bottom: 12px;
 }
 
 .title {
@@ -44,9 +44,9 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 h1,
-h2,
 h3 {
   color: black;
+  margin: 0px;
 }
 body {
   background-color: #f3f2ef;
@@ -87,6 +87,9 @@ body {
 .company-details h1 {
   color: black;
 }
+.title {
+  margin-top: 40px;
+}
 
 .linkedin-employees a {
   color: rgba(0, 0, 0, 0.6);
@@ -109,33 +112,23 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
-
 .visit-website-btn {
   background-color: #fff;
   border: 1px solid #0a66c2;
   color: #0a66c2;
   padding: 6px 35px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   border-radius: 20px;
-  cursor: pointer;
 }
 
 .more-btn {
   background-color: #fff;
-  border: 1px solid #0a66c2;
-  color: #0a66c2;
-  padding: 6px 35px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
+  padding: 6px 19px;
   margin: 4px 2px;
   border-radius: 20px;
-  cursor: pointer;
 }
 
 .navbar-homepage {
@@ -143,7 +136,6 @@ body {
   display: flex;
 
   align-items: center;
-  border-top: 0.5px solid #ccc;
 }
 
 /* changing the default nav bar color */
@@ -165,29 +157,28 @@ body {
 
 /* about section - left flexbox */
 
-.about-section p {
-  padding-bottom: 10px;
-}
 .see-all-details {
-  border-top: 1px solid #ccc;
-  padding: 10px 250px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
-/* left flexbox last section -- Insights on thought bot */
+
+/* ---------------------------------------------------- */
+/* left flexbox last section -- Insights on thoughtbot */
+/* ---------------------------------------------------- */
+
 .insights-section {
-  /* margin-top: 10px; */
 }
 
 .company-growth {
   display: flex;
   flex-direction: row;
 }
-.insights-section-upperpart {
-  border-bottom: 1px solid #ccc;
-}
 
 .headcount-flex {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   width: 55%;
 }
 
@@ -196,7 +187,6 @@ body {
   border-radius: 35px;
 }
 .recent-hires {
-  margin-top: 10px;
   width: 45%;
 }
 .recent-hires h4,
@@ -235,22 +225,19 @@ p {
 .adds-images {
   height: 250px;
   background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 /* Other similar companies in right flexbox  */
-.other-pages {
-  padding-left: 15px;
-}
+
 .company-page {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 10px;
+  padding: 12px 0px;
 }
 
 .other-company-details {
   display: flex;
   flex-direction: row;
-}
-.companypage-details {
-  margin-left: 10px;
 }
 
 .companypage-details h3,
@@ -282,25 +269,27 @@ p {
 /* Main navbar css */
 /*----------------------------------------------------------------*/
 .header-navbar {
-  width: 100vw;
+  width: 100%;
   background-color: #fff;
 }
 
 .main-navbar {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: auto;
-  justify-content: space-around;
-
   width: 1124px;
-  margin-bottom: 50px;
-  padding-top: 5px;
+  padding: 6px 24px;
+}
+input {
+  position: top left;
+  height: 30px;
+  padding-left: 25px;
 }
 .navbar-leftflex {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 25%;
 }
 
 .linkedin-logo {
@@ -315,44 +304,47 @@ p {
   border-radius: 5px;
 }
 .right-flexbox {
-  width: 65%;
+  width: max-content;
 }
 
 .rightflexbox-icons ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-
-  padding-left: 150px;
   align-items: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .rightflexbox-icons ul li {
   list-style: none;
-  height: 52px;
-  /* align-items: center; */
 }
-
-.rightflexbox-icons ul {
-  margin: 0px;
+li a img {
+  width: 24px;
+  height: 24px;
+  border-radius: 15px;
 }
 
 .navbar-icon-links {
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  width: 80px;
+  justify-content: center;
+  height: 100%;
+}
+.sm-search-icon {
+  display: none;
 }
 
 .navbar-icon-links p {
-  font-size: 12px;
+  font-size: 11px;
 }
 .navbar-work-border {
   border-left: 1px solid #ccc;
 }
 
-.try-permium li {
-  width: 30px;
+.try-permium {
+  width: 80px;
 }
 /* ----------------------------------------------- */
 /* Recent Job Opening Section */
@@ -361,13 +353,10 @@ p {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
 }
 .job-opening {
   display: flex;
   flex-direction: row;
-  margin-right: 15px;
 }
 
 .job-image img {
@@ -378,7 +367,7 @@ p {
   margin: 0px;
 }
 .all-jobs-opening {
-  margin: 10px 265px;
+  text-align: center;
 }
 /* ----------------------------------------------- */
 /* Recently posted videos */
@@ -388,13 +377,30 @@ p {
   display: flex;
   flex-direction: row;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
 }
+.video-box {
+  position: relative;
+  height: fit-content;
+  width: max-content;
+}
+.video-play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background: black;
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid black;
+}
+
 .posted-videos-text p {
-  padding: 0 20px;
+  padding-left: 16px;
 }
 .see-all-videos {
-  padding: 5px 250px;
+  text-align: center;
 }
 
 /* ----------------------------------------------- */
@@ -402,18 +408,21 @@ p {
 /* ----------------------------------------------- */
 .body-font {
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 0.6rem;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.9);
 }
+.t-heading {
+  font-size: 2rem;
+}
 
 .t-24 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
 }
 .title-font {
   font-size: 100%;
 }
-.title-16 {
+.t-16 {
   font-size: 1.6rem;
   font-weight: 400;
 }
@@ -422,7 +431,7 @@ p {
   line-height: 1.42857;
 }
 
-.text-bold {
+.t-bold {
   font-weight: 600;
 }
 .text-color {
@@ -433,15 +442,294 @@ p {
   font-size: 2rem;
   line-height: 1.4;
 }
-.padding-class {
-  padding: 24px 24px 24px 24px;
+
+/* --------------------------------------------- */
+/* padding for entire page  */
+/* --------------------------------------------- */
+
+.pt-24 {
+  padding-top: 24px;
+}
+.pt-16 {
+  padding-top: 16px;
+}
+
+.p-r-l {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.pb-16 {
+  padding-bottom: 16px;
+}
+.pb-24 {
+  padding-bottom: 24px;
+}
+.padding-top-bottom {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.job-padding {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.padding-insight {
+  padding: 12px 16px;
 }
 
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
 
 /* ----------------------------------------------- */
-/* Media queries  */
+/* Media queries - mobile view */
 /* ----------------------------------------------- */
+@media (max-width: 424px) and (min-width: 320px) {
+  .flex-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .flex-left {
+    width: 100%;
+  }
+  .flex-right {
+    width: 100%;
+  }
+  .posted-videos-flex {
+    flex-direction: column;
+  }
+  .follow-button {
+    background-color: #0a66c2;
+    border: none;
+    color: white;
+    padding: 0px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 5px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .visit-website-btn {
+    background-color: #fff;
+    border: 1px solid #0a66c2;
+    color: #0a66c2;
+    padding: 0px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
 
-/* mobile screen :-320px */
+  .more-btn {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+    padding: 6px 19px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 576px) and (min-width: 424px) {
+  .flex-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .flex-left {
+    width: 100%;
+  }
+  .flex-right {
+    width: 100%;
+  }
+  .posted-videos-flex {
+    flex-direction: column;
+  }
+  .follow-button {
+    background-color: #0a66c2;
+    border: none;
+    color: white;
+    padding: 0px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 5px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .visit-website-btn {
+    background-color: #fff;
+    border: 1px solid #0a66c2;
+    color: #0a66c2;
+    padding: 0px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .more-btn {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+    padding: 6px 19px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .main-navbar {
+    justify-content: space-between;
+    margin: auto;
+    width: max-content;
+    padding: 6px 20px;
+  }
+  .sm-search-icon {
+    display: block;
+  }
+  .navbar-icon-links {
+    width: 70px;
+  }
+  .navbar-icon-text {
+    display: none;
+  }
+
+  .navbar-searchbox input {
+    display: none;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    width: 576px;
+  }
+  .flex-left {
+    width: 100%;
+  }
+  .posted-videos-flex {
+    flex-direction: column;
+  }
+  .recent-jobs {
+    flex-direction: column;
+    width: max-content;
+  }
+  .recent-hires {
+    width: 100%;
+  }
+  .company-growth {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .headcount-flex {
+    width: 100%;
+  }
+  .flex-right {
+    width: 100%;
+  }
+
+  .adds-images {
+    align-items: center;
+  }
+  .headcount-flex {
+    justify-content: flex-start;
+  }
+  .median-ventures {
+    margin-left: 40px;
+  }
+  .company-details {
+    padding-left: 10px;
+  }
+  .follow-button {
+    background-color: #0a66c2;
+    border: none;
+    color: white;
+    padding: 0px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 5px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .visit-website-btn {
+    background-color: #fff;
+    border: 1px solid #0a66c2;
+    color: #0a66c2;
+    padding: 0px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .more-btn {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+    padding: 6px 19px;
+    border-radius: 20px;
+  }
+}
+/* media query - tablet view */
+/* @media (max-width: 560px) {
+  .sm-hide {
+    display: none;
+  }
+  .sm-nav-block {
+    display: block;
+  }
+} */
+
+@media (max-width: 991px) and (min-width: 769px) {
+  .main-navbar {
+    justify-content: space-between;
+    margin: auto;
+    width: max-content;
+    padding: 6px 20px;
+  }
+  .navbar-icon-links {
+    width: 70px;
+  }
+  .sm-search-icon {
+    display: block;
+  }
+
+  .navbar-searchbox input {
+    display: none;
+  }
+  .navbar-icon-text {
+    display: none;
+  }
+  .flex-container {
+    width: 720px;
+    justify-content: space-between;
+  }
+  .flex-left {
+    width: 55%;
+  }
+  .flex-right {
+    width: 42%;
+  }
+  .adds-images {
+    overflow: hidden;
+    height: auto;
+  }
+  .posted-videos-flex {
+    flex-direction: column;
+  }
+
+  .company-details-buttons {
+    flex-wrap: wrap;
+  }
+  .follow-button {
+    padding: 6px 27px;
+    margin: 5px 5px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 991px) {
+  .flex-container {
+    width: 960px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .flex-container {
+    width: 1124px;
+    justify-content: space-between;
+  }
+}
