@@ -56,9 +56,10 @@ body {
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica,
     Arial, sans-serif;
   font-weight: 400;
+  /* font-size: 9.6px; */
   line-height: 1.4;
+  color: rgba(0, 0, 0, 0.9);
   margin: 0px;
-  margin-bottom: 20px;
 }
 
 .companyinfo-block {
@@ -409,7 +410,7 @@ li a img {
 .body-font {
   font-weight: 400;
   font-size: 0.6rem;
-  line-height: 1.5;
+  line-height: 1.4;
   color: rgba(0, 0, 0, 0.9);
 }
 .t-heading {
@@ -664,15 +665,6 @@ li a img {
     border-radius: 20px;
   }
 }
-/* media query - tablet view */
-/* @media (max-width: 560px) {
-  .sm-hide {
-    display: none;
-  }
-  .sm-nav-block {
-    display: block;
-  }
-} */
 
 @media (max-width: 991px) and (min-width: 769px) {
   .main-navbar {
@@ -726,10 +718,16 @@ li a img {
     width: 960px;
     justify-content: space-between;
   }
+  .main-navbar {
+    width: 960px;
+  }
 }
 @media (min-width: 1200px) {
   .flex-container {
     width: 1124px;
     justify-content: space-between;
+  }
+  .main-navbar {
+    width: 1124px;
   }
 }
